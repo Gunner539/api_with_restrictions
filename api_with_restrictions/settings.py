@@ -83,8 +83,13 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '10/minute',
-        'user': '20/minute'
-    }
+        'user': '20/minute',
+
+    },
+    # 'DEFAULT_FILTER_BACKENDS': [
+    #     'django_filters.rest_framework.DjangoFilterBackend'
+    # ]
+
 }
 
 WSGI_APPLICATION = 'api_with_restrictions.wsgi.application'
@@ -98,7 +103,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'netology_classified_ads',
         'USER': 'postgres',
-        'PASSWORD': 'xxx',
+        'PASSWORD': 'Gunner90',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
